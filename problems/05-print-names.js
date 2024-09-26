@@ -4,6 +4,13 @@ loop through all of the objects and print the "name" key from each object.
 */
 
 // Your code here 
+function printNames(objects) {
+  for (let obj of objects) {
+    if(obj.name) {
+      console.log(obj.name);
+    }
+  }
+}
 
 // Example:
 // printNames([

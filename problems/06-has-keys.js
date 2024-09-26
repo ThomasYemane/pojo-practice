@@ -5,14 +5,22 @@ the object.
 */
 
 // Your code here 
+function hasKeys(obj, arr) {
+  for (let key of arr) {
+    if (!obj.hasOwnProperty(key)) {
+      return false;
+    }
+  }
+  return true;
+}
 
-// let survey = {
-//   name: 'Check',
-//   question: 'Satisfied?',
-//   choices: ['Yes', 'No']
-// }
-// console.log(hasKeys(survey, ['question', 'choices'])); // true
-// console.log(hasKeys(survey, ['numSubmitted', 'choices'])); // false
+let survey = {
+  name: 'Check',
+  question: 'Satisfied?',
+  choices: ['Yes', 'No']
+}
+console.log(hasKeys(survey, ['question', 'choices'])); // true
+console.log(hasKeys(survey, ['numSubmitted', 'choices'])); // false
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 
